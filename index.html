@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math in CS</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <style>
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            background-image: linear-gradient(to right, #c5d0d6, #adcadd, #95c4e6, #7fbcef, #6ab4f8);
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+        }
+
+        .caption {
+            text-align: center;
+            border-bottom: 3px solid white;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .one,
+        .two,
+        .three,
+        .four,
+        .five,
+        .six,
+        .eight,
+        .nine,
+        .ten {
+            border: 2px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .result {
+            font-size: 50px;
+            color: red;
+        }
+
+        button {
+            border: none;
+
+        }
+
+        button {
+            align-items: center;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, 0.85);
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        button:hover,
+        button:focus {
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            background-color: #F0F0F1;
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+            color: rgba(0, 0, 0, 0.65);
+            transform: translateY(0);
+        }
+
+    </style>
+
+    <h1>Math in CS</h1>
+
+    <div class="main">
+
+        <div class="one">
+            <h3 class="caption">FIBONACCI SEQUENCE - ITERATION</h3>
+            <p class="result" data-result-fibonacci-iteration-sequence></p>
+            <p class="result" data-result-fibonacci-iteration-total></p>
+            <button id="1">Try yourself</button>
+        </div>
+
+        <div class="two">
+            <h3 class="caption">FIBONACCI SEQUENCE - RECURSION</h3>
+            <p class="result" data-result-fibonacci-recursion-sequence></p>
+            <p class="result" data-result-fibonacci-recursion-total></p>
+            <button id="2">Try yourself</button>
+        </div>
+
+        <div class="three">
+            <h3 class="caption">MERGE SORT</h3>
+            <p class="result" data-result-merge-sort></p>
+            <button id="3">Try yourself</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
